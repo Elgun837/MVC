@@ -40,10 +40,13 @@ class PagesController extends Controller
     }
 
     public function delete()
-    {
-        $id = $_GET['id'];
+    {   
+        $newUrl = $_SERVER['REQUEST_URI'];
+        $newUrl = explode('/',$newUrl,);
+        $id = $newUrl[3];
         $pr = parent::$db->catDelete($id);
         parent::$url->get_url('delete', $pr);
+        
     }
     public function edit()
     {

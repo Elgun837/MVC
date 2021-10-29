@@ -37,9 +37,9 @@ class Model
     }
     public function catDelete($id)
     {
-
         $service = $this->connect->query("DELETE FROM `category` WHERE id = $id");
         return $service;
+        
     }
     public function updateCategory()
     {

@@ -28,8 +28,8 @@
 
           <th scope="row"><?php echo $count ?></th>
             <td><?php echo $pr['category_name'] ?></td>
-            <td><a href="edit?id=<?= $pr['id'] ?>">Update</a></td>
-            <td><a href="delete?id=<?= $pr['id'] ?>">Delete</a></td>
+            <td><a href="edit/<?= $pr['id'] ?>">Update</a></td>
+            <td><a href="delete/<?= $pr['id'] ?>">Delete</a></td>
           </tr>
         <?php } ?>
    
